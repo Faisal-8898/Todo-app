@@ -11,6 +11,7 @@ const TodoForm = () => {
 
     const onInputChange =(e)=>{
         setText(e.target.value);
+        console.log(e.target.value);
     }
 
     return (
