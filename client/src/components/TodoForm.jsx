@@ -22,7 +22,6 @@ const TodoForm = () => {
     return (
         <form className="form" action="" onSubmit={onFormSubmit}>
             <input placeholder="Enter new todo..." className="input" onChange={onInputChange}/>
-            value = {text};
         </form>
     );
 };

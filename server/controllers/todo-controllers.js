@@ -16,3 +16,15 @@ export const addNewTodo = async (req,res)=>{
         return res.status(500).json(error.message);
     } 
 }
+
+
+export const getAllTodos = async(req ,res) =>{
+    try{
+
+        const todos = await Todo.find({}).sort({'createdAt' : -1})
+        res.status(200).json(todos);
+    }
+    catch(error){
+        return res.status(500).json(error.message);
+    } 
+}
