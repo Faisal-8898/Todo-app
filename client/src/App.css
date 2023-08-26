@@ -15,7 +15,7 @@ header h1{
   font-family: 'Montserrat';
   font-size: 100px;
   color: #14FFEC;
-  font-weight: 500;
+  font-weight: lighter;
 }
 
 
@@ -30,5 +30,41 @@ input{
   padding: 7px;
 }
 
+
+.task{
+  background-color:#21ffedd4 ;
+  color: rgb(40, 40, 40);
+  font-family: 'Poppins', Courier, monospace;
+  font-weight: 400;
+  font-size: 18px;
+  padding:  13px;
+  margin: 5px;
+  overflow-x: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.task span{
+
+}
+
+.fas{
+  float: right;
+  margin-right: 20px;
+}
+
+article{
+  display: grid;
+}
+
+.edit-todo{
+  width: 85%;
+  font-size: 19px;
+  color: rgb(231, 231, 231);
+  background-color: #454545;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 9px;
+}
 
 
