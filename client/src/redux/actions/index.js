@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ADDNEW_TODO, GETALL_TODO ,TOGGLE_TODO, UPDATE_TODO} from "./type.js";
+import { ADDNEW_TODO, GETALL_TODO ,TOGGLE_TODO, UPDATE_TODO,DELETE_TODO} from "./type.js";
 
 const API_URL = "http://localhost:8000";
 
@@ -43,7 +43,7 @@ export const updateTodo = (id, data) => async(dispatch)=>{
 export const deleteTodo = (id) => async(dispatch)=>{
   try {
     const res = await axios.delete(`${API_URL}/todos/${id}`);
-    dispatch({ type:UPDATE_TODO, payload: res.data });
+    dispatch({ type:DELETE_TODO, payload: res.data });
   } catch (error) {
     console.error();
   }
